@@ -20,6 +20,8 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
+
+    /* Tamanho da fonte padrão: 16px - 100% - 1rem */
     font-size: 60%; /* controle das medidas rem */
 }
 
@@ -52,4 +54,8 @@ body, input, button, textarea{
     max-width: 700px;
 }
 
-
+@media(min-width: 700px){
+    :root{
+        font-size: 62.5% /* 1rem será relativo a 10px */
+    }
+}
